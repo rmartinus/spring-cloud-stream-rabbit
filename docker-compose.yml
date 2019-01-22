@@ -12,12 +12,12 @@ services:
       - 5672:5672
     logging:
       driver: json-file
-  cloud-stream-producer:
-    container_name: cloud-stream-producer
+  producer:
+    container_name: producer
     build:
       context: .
       dockerfile: Dockerfile
-    image: cloud-stream-producer:latest
+    image: producer:latest
     networks:
       - my-network
     expose:

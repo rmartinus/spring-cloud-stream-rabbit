@@ -1,4 +1,4 @@
-FROM openjdk:11-slim
+FROM openjdk:11-jdk-slim
 MAINTAINER rmartinus
 RUN mkdir -p /opt/producer
 WORKDIR /opt/producer
